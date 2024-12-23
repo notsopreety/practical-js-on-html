@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samir-HTML</title>
+</head>
+<body>
+    <script id="text/javascript">
+        function test () {
+            var a = prompt("Enter first number");
+            var b = prompt("Enter second number");
+            var op = prompt("Enter the operation (i.e: +, -, /, *)");
+            switch (op) {
+                case '+':
+                    total = a+b;
+                    document.write(`Sum of ${a} & ${b} is ${total}`);
+                    break;
+                case '-':
+                    total = a-b;
+                    document.write(`Difference of ${a} & ${b} is ${total}`);
+                    break;
+                case '/':
+                    total = a/b;
+                    document.write(`Division of ${a} & ${b} is ${total}`);
+                    break;
+                case '*':
+                    total = a*b;
+                    document.write(`Multiplication of ${a} & ${b} is ${total}`);
+                    break;
+                default:
+                document.write("Invalid operation!!");
+                    break;
+            }
+        }
+    </script>
+    <h1>Wanna do calculations ?<br></h1>
+    <input type="button" onclick="test()" value="Ok!">
+</body>
+</html>

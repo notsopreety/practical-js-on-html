@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samir-HTML/Find the Largest Number</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function findLargestNumber(a, b, c) {
+            let largest;
+            if (a >= b && a >= c) {
+                largest = a;
+            } else if (b >= a && b >= c) {
+                largest = b;
+            } else {
+                largest = c;
+            }
+            return largest;
+        }
+        let num1 = prompt("Enter the first number:");
+        let num2 = prompt("Enter the second number:");
+        let num3 = prompt("Enter the third number:");
+
+        let largest = findLargestNumber(num1, num2, num3);
+        alert("The largest number is: " + largest);
+    </script>
+</body>
+</html>

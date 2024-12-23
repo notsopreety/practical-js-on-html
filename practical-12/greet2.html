@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samir-HTML/Greet2</title>
+</head>
+<body>
+    <h1>Enter Your Name</h1>
+    <form id="form">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name here"><br>
+        <input type="button" onclick="greet()" value="Submit">
+    </form>
+    <script type="text/javascript">
+        function greet() {
+            var name = document.getElementById("name").value
+            if (name) {
+                alert(`Hello, ${name}`);
+            } else {
+                alert("Please enter your name");
+            }
+        }
+    </script>
+</body>
+</html>
